@@ -148,7 +148,7 @@ a {
   justify-content: center;
 }
 .main__title {
-  font-weight: 300;
+  font-weight: 500;
   font-size: 64px;
   line-height: 100%;
   letter-spacing: 0%;
@@ -686,6 +686,6 @@ color: #fff;
       font-size: 32px;
     }
     .main__bg img{
-      filter: brightness(80%);
+      filter: brightness(70%);
     }
   }
