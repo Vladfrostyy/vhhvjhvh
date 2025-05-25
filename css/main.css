@@ -634,6 +634,10 @@ color: #fff;
     }
   }
   @media(max-width: 600px){
+    .main__text{
+      font-size: 20px !important; 
+      max-width: none;
+    }
     .main__body{
       padding: 150px 0px 150px 0px;
     }
@@ -679,9 +683,9 @@ color: #fff;
       font-size: 12px;
     }
     .main__title{
-      font-size: 28px;
+      font-size: 32px;
     }
-    .main__text{
-      font-size: 14px;
+    .main__bg img{
+      filter: brightness(80%);
     }
   }
