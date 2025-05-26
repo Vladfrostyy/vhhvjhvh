@@ -123,8 +123,19 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
+  gap: 10px;
 }
 /*----------------------------------*/
+.header__language {
+  display: flex;
+  gap: 20px;
+}
+.header__switcher {
+  font-size: 24px;
+  color: #fff;
+  padding-bottom: 20px;
+}
 .page__main {
   position: relative;
 }
@@ -199,6 +210,76 @@ color: #fff;
   padding: 20px 40px;
   color: #fff;
   z-index: 100;
+}
+.page__price {
+  padding: 50px 0px;
+  background-color: #fff;
+}
+.price__group{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}
+.price__container {
+}
+._container {
+}
+.price__body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+.price__title {
+  font-weight: 400;
+  font-style: italic;
+  font-size: 32px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+.price__columns {
+  display: flex;
+  width: 100%;
+  gap: 15px;
+  justify-content: space-around;
+}
+.price__column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+.price__image {
+}
+.price__quant,.price__size,
+.price__cost,
+.price__discount,
+.price__text{
+  font-weight: 500;
+  font-size: 22.75px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+.price__button {
+  border-width: 6.78px, 6.78px, 6.78px, 6.78px;
+  border-style: solid;
+  border-color: #F2D13C4D;
+  background: linear-gradient(82.52deg, #F48F3E -0.6%, #E8BE57 23.47%, #FB9442 55.93%, #FAE066 83.91%, #E8BE57 106.3%);
+  font-weight: 600;
+  font-size: 18.77px;
+  line-height: 150%;
+  padding: 25px 45px;
+  letter-spacing: 23%;
+  text-align: center;
+  text-transform: uppercase;
+  transition: all 0.5s ease 0s;
+}
+.price__button:hover{
+  background: linear-gradient(82.52deg,  #F48F3E 106.3%, #FAE066 83.91%,#FB9442 55.93%,#E8BE57 23.47%,  #F48F3E -0.6%);
+color: #fff;
 }
 /*-----------------------*/
 .problems__body {
@@ -537,6 +618,15 @@ color: #fff;
     }
 }
 @media(max-width:999.98px){
+  .price__image{
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+  .price__button{
+    padding: 20px 40px;
+    font-size: 16px;  
+}
   .problems__aside img{
     width: 100%;
     object-fit: cover;
@@ -629,15 +719,31 @@ color: #fff;
       align-items: center;
       justify-content: center;
     }
-    .footer__location, .footer__email, .footer__number, .footer__registration{
+    .footer__location, 
+    .footer__email, 
+    .footer__number, 
+    .footer__registration{
       text-align: center;
     }
   }
   @media(max-width: 600px){
+    .price__quant, 
+    .price__size, 
+    .price__cost, 
+    .price__discount, 
+    .price__text {
+      font-size: 22px;
+    }
+    .price__columns{
+      flex-direction: column;
+      gap: 40px;
+    }
+    .price__button{
+      width: 90%;
+    }
     .main__text{
       font-size: 20px !important; 
       max-width: none;
-      font-weight:400;
     }
     .main__body{
       padding: 150px 0px 150px 0px;
@@ -690,3 +796,4 @@ color: #fff;
       filter: brightness(75%);
     }
   }
+
