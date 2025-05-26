@@ -367,11 +367,11 @@ color: #fff;
   font-weight: 400;
   font-size: 32px;
   line-height: 150%;
-  letter-spacing: 23%;
+  letter-spacing: 23% !important;
   text-transform: uppercase;
 }
 .about__line {
-  width: 80%;
+  width: 100%;
   border: 1px solid #010101;
 }
 /*-----------------------------------*/
@@ -677,7 +677,7 @@ color: #fff;
   }
   .process__subtitle{
     font-size: 24px;
-    text-align: center;
+    text-align: left;
   }
   .problems__block-group{
     display: flex;
@@ -695,6 +695,7 @@ color: #fff;
     }
     .process__text{
       font-size: 1.3rem;
+      text-align: center;
     }
     .process__images {
       flex-wrap: wrap;
@@ -722,6 +723,16 @@ color: #fff;
     }
   }
   @media(max-width: 600px){
+    .process__text{
+      font-size: 1.3rem;
+      text-align: left;
+    }
+    .txt{
+      display: none;
+    }
+    .header__container{
+      padding: 20px 15px;
+    }
     .price__quant, 
     .price__size, 
     .price__cost, 
@@ -791,4 +802,11 @@ color: #fff;
       filter: brightness(75%);
     }
   }
-
+@media(max-width: 450px){
+  .header__logo img{
+    max-width: 90px;
+  }
+  .header__switcher img{
+    max-width: 30px;
+  }
+}
